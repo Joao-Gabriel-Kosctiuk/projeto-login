@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/mediaquery.css">
+    <title>Login</title>
+</head>
+<body>
+    <main>
+        <section id="login">
+            <div id="imagem">
+                <!--Imagem está posta pelo CSS-->
+            </div>
+            <div id="form">
+                <h1>Login</h1>
+                <p>Seja bem-vindo(a) novamente. Faça login para acessar a sua conta e poder fazer as configurações no seu ambiente.</p>
+                <form action="login.php" method="post">
+                    <div class="campo">
+                        <label for="ilogin"><span class="material-symbols-outlined">
+                            account_circle
+                        </span></label>
+                        <input type="email" name="login" id="ilogin" placeholder="Seu email" autocomplete="email" required max-lenght="30">
+                    </div>
+                    <div class="campo">
+                        <label for="isenha"><span class="material-symbols-outlined">
+                            lock
+                        </span></label>
+                        <input type="password" name="senha" id="isenha" placeholder="Sua senha" autocomplete="current-password" required min-lenght="8" maxlength="30">
+                    </div>
+                    <input type="submit" value="Entrar">
+                    <a href="esqueci.html">
+                        Esqueci a senha
+                    </a>
+                </form>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
